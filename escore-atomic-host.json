@@ -1,0 +1,20 @@
+{
+    "include": "escore-atomic-base.json",
+
+    "ref": "escore/7/atomic/x86_64/escore-virt-host",
+
+    "initramfs-args": ["--no-hostonly"],
+
+    "packages": ["tuned", "man-db", "man-pages", "bash-completion",
+                 "rsync", "tmux", "net-tools", "nmap-ncat", "bind-utils",
+                 "git", "sysstat", "policycoreutils-python", "libvirt",
+                 "qemu-kvm", "audit", "cloud-init",
+                 "util-linux", "rsyslog", "less", "tar", "NetworkManager",
+                 "iputils", "iprutils", "iptables", "irqbalance", "openssh-clients",
+                 "authconfig", "vim" ],
+
+
+    "units": ["libvirtd.service"],
+    "default_target": "multi-user.target"
+
+}

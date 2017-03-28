@@ -1,0 +1,23 @@
+{
+    "comment": "ESCore 7 Base Atomic Defs",
+
+    "osname": "escore-atomic",
+    "ref": "escore/7/atomic/x86_64/base",
+    
+    "repos": ["CentOS-Base", "CentOS-updates", "CentOS-extras",
+              "atomic7-testing", "virt7-testing", "escore-base"],
+
+    "selinux": true,
+
+    "bootstrap_packages": ["filesystem", "glibc", "nss-altfiles", "shadow-utils",
+                           "escore-release", "kernel", "rpm-ostree", "lvm2"],
+
+    "packages": ["syslinux-extlinux", "e2fsprogs", "xfsprogs",
+                 "selinux-policy-targeted", "audit",
+                 "openssh-server", "openssh-clients", "sudo",
+                 "passwd", "NetworkManager", "vim-minimal",
+                 "grub2", "grub2-efi", "ostree-grub2", "lvm2" ],
+    
+    "default_target": "multi-user.target"
+
+}
