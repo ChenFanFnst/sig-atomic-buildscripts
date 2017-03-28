@@ -4,4 +4,4 @@ mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$basearch&repo=extras&in
 #baseurl=http://mirror.centos.org/centos/$releasever/extras/$basearch/
 gpgcheck=1
 gpgkey=http://mirror.centos.org/centos/7/os/x86_64/RPM-GPG-KEY-CentOS-7
-
+exclude=qemu-img qemu-kvm qemu-kvm-common qemu-kvm-tools libvirt libvirt-client libvirt-daemon* libvirt-devel libvirt-docs libvirt-lock-sanlock libvirt-login-shell kernel kernel-abi-whitelists kernel-debug kernel-debug-devel kernel-devel kernel-doc kernel-headers kernel-tools kernel-tools-libs* perf python-perf
